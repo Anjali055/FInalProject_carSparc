@@ -10,22 +10,18 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 //import {} from './sign-up/SignupCustomModule'
+import{}from './forgot-password/ForgotPasswordCustomModule'
 
 export const MyRoutes:Routes=
 [
     {path:'',component:LoginComponent},
     {path:'UserserviceButtons',component:UserServiceButtonsComponent},
+    //used inside the lazyloadedcomponent
     // {path:'usersignUp',component:SignUpComponent},
     {path:'usersignUp',loadChildren:'./sign-up/SignupCustomModule#SignupCustomModule'},
     {path:'setPassword',component:SetPasswordComponent},
-    {path:'ForgotPassword',component:ForgotPasswordComponent},
-//     {path:'sidebar',component:SidebarComponent,
-//     children: [
-//         { path:'editprofile',component:EditProfileComponent},
-//         {path:'chagepassword',component:ChangePasswordComponent}
-//     ]
-
-// },
+    //{path:'ForgotPassword',component:ForgotPasswordComponent},
+    {path:'ForgotPassword',loadChildren:'./forgot-password/ForgotPasswordCustomModule#ForgotPasswordCustomModule'},
     {path:'MenuDashboard',component:DashBordComponent,
      children: [
                  { path:'editprofile',component:EditProfileComponent},

@@ -26,9 +26,12 @@ import{FormsModule,ReactiveFormsModule} from '@angular/forms'
     LoginComponent,
     UserServiceButtonsComponent,
     MasterComponent,
-    // SignUpComponent,
+    //---used inside custom config
+    // SignUpComponen
     SetPasswordComponent,
-    ForgotPasswordComponent,
+
+    //---used inside custom config
+    //ForgotPasswordComponent,
     DashBordComponent,
     EditProfileComponent,
     SidebarComponent,
